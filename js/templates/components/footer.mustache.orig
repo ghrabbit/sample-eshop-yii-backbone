@@ -1,0 +1,46 @@
+	  <div id="footer">
+	   <div class="container">
+	     <div class="row">
+		   <div class="col-md-12">
+	         <div class="text-center">
+	          
+             </div>
+	       </div>
+	     </div>
+	     <div class="row">
+	       <div class="col-md-3">
+			
+			<!--
+			<a href="#" class="yii-logo">Yii</a>
+			<div class="text-muted">The Fast, Secure and Professional PHP Framework</div>
+			-->
+            <dl class="dl-horizontal-">
+              <dt><a href="http://github.com/ghrabbit/sample-eshop-yii" class="sample-eshop-logo">sample-eshop</a></dt>
+              <dd>Shop application sample series</dd>
+            </dl>
+		  </div>
+		  <div class="col-md-6">
+			<dl class="dl-horizontal-">
+              <dt><a href="http://yiiframework.com" class="yii-logo">Yii</a></dt>
+              <dd>The Fast, Secure and Professional PHP Framework</dd>
+              <dt><a href="http://mustache.github.com" class="mustache-logo">mustache</a></dt>
+              <dd>Logic-less templates</dd>
+            </dl>
+		  </div>
+		  
+	      <div class="col-md-3">
+	        <div class="text-center">
+	          <!--{{{rights}}}-->
+            </div>
+	      </div>
+	      
+	    </div><!-- end row -->
+	    <div class="row">
+		   <div class="col-md-12">
+	         <div class="text-center">
+	          {{{rights}}}
+             </div>
+	       </div>
+	     </div>
+	  </div>
+	 </div>

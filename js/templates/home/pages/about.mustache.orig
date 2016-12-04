@@ -1,0 +1,24 @@
+<article class="jumbotron">
+	<header class="page-header">
+		<h1>О сайте <small><p>что делать? и кто виноват?</p></small></h1>
+	</header>
+	<section>
+		<p>Этот сайт представляет собой образец кода <span class="label label-info">php</span>, <span class="label label-default">html5</span>,  <span class="label label-default">css3</span>. Вы можете скачать исходный код и использовать его по своему усмотрению. Вы можете связаться со мной заполнив форму <a href="#contact">Контакт</a></p>
+	</section>
+	<aside>
+		<p>В материалах сайта использованы</p>
+		<ul class="nav nav-pills nav-stacked">
+			<li><a href="http://jquery.com/">JQuery</a></li>
+			<li><a href="http://twitter.github.com/bootstrap/">Bootstrap</a></li>
+			<li><a href="http://glyphicons.com">Glyphicons</a></li>
+			<!--li><a href="http://kainsk.tomsk.ru/">Домашний Компьютер</a-->
+			<li><a href="http://www.devshed.com/c/a/PHP/Building-an-ECommerce-Site-Part-1-Building-a-Product-Catalog/">MyMarket by Zhang Ying</a></li>
+			<!--<a href="http://www.devshed.com/cp/bio/Ying-Zhang/"></a>-->
+			<li><a href="//yiiframework.com">YII Framework</a></li>
+		</ul>
+		<!--p><a class="btn btn-primary btn-large">Узнай больше</a></p-->
+	</aside>
+	<footer>
+	  <p>&copy; 2013 Артюх Сергей.</p>
+	</footer>
+</article>

@@ -1,0 +1,59 @@
+<h2><p class="top-title- bg-primary">{{labels.title}}</p></h2>
+{{#flash}}
+<div class="alert alert-success">{{ flash }}</div>
+{{/flash}}
+{{^flash}}
+<p><h3>{{labels.filloutForm}}</h3></p>
+
+<div class="form-">
+<form class="form-horizontal" role="form" action="">
+  <small>
+    {{{labels.requiredFields}}}
+  </small>
+  <div class="errorSummary">{{#errorSummary}}{{{ errorSummary }}}{{/errorSummary}}</div>
+  <div class="form-group">
+    <label for="inputName" class="col-sm-3 control-label">{{labels.name}} <span class="required">*</span></label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" name="name" id="inputName" placeholder="'name">
+    </div>
+  </div>
+  -
+  <div class="form-group">
+    <label for="inputEmail" class="col-sm-3 control-label">{{labels.email}} <span class="required">*</span></label>
+    <div class="col-sm-5">
+      <input type="email" class="form-control" name="email" id="inputEmail" placeholder="email">
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="inputSubject" class="col-sm-3 control-label">{{labels.subject}} <span class="required">*</span></label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" name="subject" id="inputSubject" placeholder="subject" size=60 maxlength=128>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="inputBody" class="col-sm-3 control-label">{{labels.body}} <span class="required">*</span></label>
+    <div class="col-sm-9">
+      <textarea class="form-control" name="body" id="inputBody" placeholder="body" rows="6" cols="50"></textarea>
+	  <!--<input type="textarea" class="form-control" name="body" id="inputBody" placeholder="body" rows="6" cols="50"></input>-->
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="inputVerifyCode" class="col-sm-3 control-label">{{labels.verifyCode}} <span class="required">*</span></label>
+    <div class="col-sm-9">
+	 {{> captcha }}	
+	 <input type="text" class="form-control" name="verifyCode" id="inputVerifyCode" placeholder="verify Code">
+	 <div class="hint help-block">{{labels.captchaHelp}}</div> 
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-default" name="submit-btn">{{labels.submit}}</button>
+	</div>
+  </div>
+</form>
+</div><!-- form -->
+{{/flash}}

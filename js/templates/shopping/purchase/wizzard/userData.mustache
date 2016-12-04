@@ -1,0 +1,118 @@
+<form class="form-horizontal" action="" method="">
+<div class="wizzard-step1 hidden">
+	<h3><span class="label label-info">{{labels.step1}}</span></h3>
+	<div class="form-group">
+		<label class="col-lg-2 control-label" for="customer">{{labels.customer}}</label>
+		<div class="col-lg-5">
+			<input type="text" class="form-control" name="customer" value="{{model.customer}}"></input>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-lg-2 control-label" for="contact">{{labels.contact}}</label>
+		<div class="col-lg-5">
+			<input type="text" class="form-control" name="contact" value="{{model.contact}}"></input>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="col-lg-2 control-label" for="address">{{labels.address}}</label>
+		<div class="col-lg-5">
+			<textarea class="form-control" name="address"  cols="50" rows="3">{{model.address}}</textarea>
+		</div>
+	</div>
+</div>	
+	<!--
+	<div class="form-group">
+		<label class="col-lg-2 control-label" for="creditcard"><-?php echo  Yii::t('app','Credit Card')?></label>
+		<div class="col-lg-5">
+			<input type="text" class="form-control" name="creditcard" value="<-? stdlib::pv($creditcard) ?>">
+		</div>
+	</div>
+	
+	<div class="form-group">	
+		<label class="col-lg-2 control-label" for="expiry"><-?php echo  Yii::t('app','Expiry')?></label>
+		<div class="col-lg-5">
+			<input type="text" class="form-control" name="expiry" value="<-?php echo  stdlib::pv($expiry) ?>">
+			<span>(yy/mm)</span>
+		</div>	
+	</div>
+    -->
+<div class="wizzard-step2 hidden">    
+	<h3><span class="label label-info">{{labels.step2}}</span></h3>
+	<div class="form-group">
+		<label class="col-lg-2 control-label" for="address">{{labels.comments}}</label>
+		<div class="col-lg-offset-2 col-lg-5">
+			<textarea class="form-control" name="comments"  rows="5" value="{{model.comments}}"></textarea>
+		</div>	
+	</div>
+</div>
+
+<div class="wizzard-step3 hidden"> 
+<h3><span class="label label-info">{{labels.step3}}</span></h3>
+
+	<table class="table">
+	<tbody>
+	<tr><td>{{labels.date}}</td><td>{{date}}</td></tr>
+	<tr><td>{{labels.total}}</td><td>{{cart.ftotal}}</td></tr>	
+	<tr><td>{{labels.billTo}}</td><td>{{model.customer}}</td></tr>	
+	<tr><td>{{labels.contact}}</td><td>{{model.contact}}</td></tr>
+	<tr><td>{{labels.address}}</td><td>{{model.address}}</td></tr>
+	</tbody>
+	</table>
+
+</div>
+<div class="wizzard-step4 hidden">
+<h3><span class="label label-info">{{labels.step4}}</span></h3>
+
+  <div class="table-responsive-">	
+	<table class="table">
+	<thead>
+	<tr class="success">
+		<th>{{labels.product}}</th>
+		<th class="text-right">{{labels.price}}</th>
+		<th class="text-right">{{labels.qty}}</th>
+		<th colspan=2 class="text-right">{{labels.total}}</th>
+	</tr>
+	</thead>
+	<tbody>
+	{{#items}}
+		<tr>
+			<td>{{attributes.product.title}}</td>
+			<td align=right>{{attributes.product.price}}</td>
+			<td align=right>{{attributes.qty}}</td>
+			<td>{{labels.valute}}</td>
+			<td align=right>{{total}}</td>
+		</tr>
+	{{/items}}
+	
+	<tr>
+		<td colspan=3></td>
+		<td colspan=2><hr size=1></td>
+	</tr>
+	<tr>
+		<td colspan=3 class="text-right">{{labels.subTotal}}</td>
+		<td>{{labels.valute}}</td>
+		<td class="text-right">{{cart.ftotal}}</td>
+	</tr>
+	<tr>
+		<td colspan=3></td>
+		<td colspan=2><hr size=1></td>
+	</tr>
+	<tr class="bg-primary">
+		<td colspan=3 class="text-right">{{labels.grandTotal}}</td>
+		<td>{{labels.valute}}</td>
+		<td class="text-right">{{cart.ftotal}}</td>
+	</tr>
+	</tbody>
+	</table>
+  </div>	
+
+</div>
+	
+	<div class="form-group pull-right">
+		<div class="col-lg-offset-2 col-lg-5">
+			<button type="button" class="btn btn-default wizzard-prev hidden">{{labels.prev}}</button>
+			<button type="button" class="btn btn-default wizzard-next hidden">{{labels.next}}</button>
+			<button type="button" class="btn btn-default wizzard-finish hidden">{{labels.finish}}</button>
+		</div>
+	</div>
+</form>

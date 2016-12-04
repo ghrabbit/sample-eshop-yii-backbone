@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content>
+    <meta name="author" content>
+
+	<link rel="icon" href="favicon.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/bower_components/font-awesome/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="css/site.css"/>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!---->
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <!---->
+    <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!---->
+    <script data-main="js/config.js" src="assets/bower_components/requirejs/require.js"></script>
+  </head>
+
+  <body>
+    <title id=title></title>
+    <nav id="topnav" class="navbar navbar-inverse navbar-fixed-top" role="navigation"></nav>
+	
+	<div class="container">
+	  <div class="row">
+        <title></title>
+        <div class="col-md-12 col-lg-12" id=breadcrumbs>
+		<!--breadcrumbs-->
+	      <!--{{{breadcrumbs}}}-->
+	    </div>
+	  </div>
+	  
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+          <div class="sidebar-nav hidden-small">
+			<!--{{{topsideMenu}}}{{{userMenu}}}{{{cartMenu}}}-->
+            <div id=topsidePanel></div><div id=userPanel></div><div id=cartPanel></div>
+		  </div><!--/.well -->
+        </div><!--/col-->
+        <div class="content-part col-sm-8 col-md-9 col-lg-9" id=document>
+          <!--{{{content}}}-->
+        </div><!--/col-->
+      </div><!--/row-->
+	</div><!--/container-->
+	
+    <footer class="page-footer"></footer>
+
+  </body>
+</html>
+
+<!-- This document saved from fluid.html -->

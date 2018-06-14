@@ -10,7 +10,7 @@
 
 Чтобы установить приложение прежде всего скопируйте релиз с github:
 
-$ git clone -b master https://github.com/ghrabbit/sample-eshop-yii.git sample-eshop-yii
+$ git clone -b master https://github.com/ghrabbit/sample-eshop-yii-backbone.git sample-eshop-yii
 
 Перейдите в каталог sample-eshop-yii/protected  и установите зависимости с помощь bower и composer:
 
